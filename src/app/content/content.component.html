@@ -1,0 +1,37 @@
+<!-- <p>
+  content works!
+</p> -->
+
+<div style="text-align:center">
+  <h4 class="table-info" style="border: 1px solid black;">Camp Schedule</h4>
+  <label>Location</label>
+  <input type="text" name="location" [(ngModel)]="location">
+  <br/> Showing Camps in {{location}}
+  <br/>
+  <!--Button with Property binding and Event binding-->
+  <button [ngClass]="{outline:apply,size:true}" [innerText]="btnText" (click)="showMore()" class="btn btn-info"></button>
+  <br/> {{info}}
+  <table class="table table-striped">
+    <tr>
+      <th>SI.NO</th>
+      <th>Name</th>
+      <th>Location</th>
+    </tr>
+    <tr *ngFor="let member of members | filter:'location':location let idx=index">
+      <td>{{idx+1}}</td>
+      <td>{{member.name}}</td>
+      <td>{{member.location}}</td>
+    </tr>
+    <!-- <tr>
+      <td>2</td>
+      <td>{{members[1].name}}</td>
+      <td>{{members[1].location}}</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>{{members[2].name}}</td>
+      <td>{{members[2].location}}</td>
+    </tr> -->
+  </table>
+
+</div>

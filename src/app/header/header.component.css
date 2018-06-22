@@ -1,0 +1,16 @@
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.left{
+    float:left;
+}
+
+.right {
+    float:right;
+}
+
+.backgorund {
+    background-color: gray;
+}

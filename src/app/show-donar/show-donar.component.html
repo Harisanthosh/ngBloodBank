@@ -1,0 +1,9 @@
+<h2>Donar List</h2>
+<!-- table>tr>td*3 -->
+<table class="table table-striped">
+  <tr *ngFor="let donar of donarList">
+    <td>{{donar.id}}</td>
+    <td>{{donar.name | uppercase}}</td>
+    <td><img src="assets/images/hari.jpg" alt="No image"></td>
+  </tr>
+</table>
